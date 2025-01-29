@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /*background-color: #0C0B3C;*/
+}
+.background {
+    background-color: #0C0B3C;
+    margin: 0 auto;
+    width: 1440px;
+    height: 1979px;
+    /*border: 2px solid white;*/
+}
+.background_bottom {
+    position: absolute;
+    background-color: #4B2EC8;
+    margin-top: 1483px;
+    width: 1440px;
+    height: 496px;
+    z-index: 1;
+}
+.header {
+    position: absolute;
+    width: 1200px;
+    height: 40px;
+    margin-left: 120px;
+    margin-top: 30px;
+    border: 2px solid white;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 180;
+    height: 40;
+    margin-left: 0;
+    margin-top: 0;
+}
+#logo {
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.navbar_table {
+    position: absolute;
+    border: #FFFFFF solid 2px;
+    width: 531px;
+    height: 24px;
+    right: 0;
+}
+.card_contacts_1, .card_contacts_2, .card_contacts_3 {
+    position: absolute;
+    background-color: #FFFFFF0D;
+    border-radius: 8px;
+}
+.card_contacts_1 {
+    width: 1200px;
+    height: 496px;
+    margin-top: 150px;
+    margin-left: 120px;
+    color: #FFFFFF;
+}
+.card_contacts_2, .card_contacts_3 {
+    width: 590px;
+    height: 440px;
+    margin-top: 666px;
+}
+.card_contacts_2 {
+    margin-left: 120px;
+}
+.card_contacts_3 {
+    margin-left: 730px;
+}
+.form {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 1200px;
+    height: 506px;
+    margin-top: 1206px;
+    margin-left: 120px;
+    border-radius: 10px;
+    z-index: 2;
+}
+.footer, .links, .messangers, .copyright {
+    border: #0C0B3C solid 2px;
+}
+.footer {
+    position: absolute;
+    z-index: 2;
+    width: 1280px;
+    height: 232px;
+    margin-top: 1725px;
+    margin-left: 80px;
+    padding: 48px 32px;
+    display: flex;
+    gap: 38px;
+    flex-direction: column;
+    align-items: center;
+}
+.links {
+    width: 1216px;
+    height: 24px;
+}
+.messangers {
+    width: 148px;
+    height: 24px;
+}
+.copyright {
+    width: 240px;
+    height: 24px;
+}
