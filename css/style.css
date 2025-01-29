@@ -82,7 +82,7 @@ body {
     border-radius: 10px;
     z-index: 2;
 }
-.footer, .links, .messangers, .copyright {
+.footer, .links, .copyright {
     border: #0C0B3C solid 2px;
 }
 .footer {
@@ -105,8 +105,17 @@ body {
 .messangers {
     width: 148px;
     height: 24px;
+    display: flex;
+    justify-content: space-between;
 }
 .copyright {
     width: 240px;
     height: 24px;
+}
+.telegram_logo, .instagram_logo, .vk_logo {
+    width: 24px;
+    height: 24px;
+}
+#tg_logo, #inst_logo, #vk_logo {
+    margin: 0 auto;
 }
