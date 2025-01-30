@@ -86,6 +86,15 @@ body {
 .language li {
     font-family: sans-serif;
 }
+button {
+    background-color: #4B2EC8;
+    border: none;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 8px;
+}
 .card_contacts_1, .card_contacts_2, .card_contacts_3 {
     position: absolute;
     background-color: #FFFFFF0D;
@@ -138,13 +147,6 @@ body {
 }
 .frame1_buttons button {
     width: 542px;
-    border-radius: 8px;
-    background-color: #4B2EC8;
-    border: none;
-    color: #FFFFFF;
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: 18px;
 }
 .card_contacts_2, .card_contacts_3 {
     width: 590px;
@@ -196,13 +198,6 @@ body {
 .frame2_button button {
     width: 542px;
     height: 52px;
-    border-radius: 8px;
-    background-color: #4B2EC8;
-    border: none;
-    color: #FFFFFF;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
 }
 .card_contacts_3 {
     margin-left: 730px;
