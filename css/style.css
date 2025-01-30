@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    font-family: 'Montope', sans-serif;
+}
 body {
     margin: 0;
     padding: 0;
@@ -148,6 +151,7 @@ button:active {
     font-family: 'Manrope', sans-serif;
 }
 .frame1_text h1 {
+    line-height: 60px;
     font-size: 40px;
 }
 .frame1_text p {
@@ -176,7 +180,7 @@ button:active {
 .card_contacts_2 {
     margin-left: 120px;
 }
-.frame2 {
+.frame2, .frame3 {
     position: absolute;
     width: 542px;
     height: 392px;
@@ -197,6 +201,7 @@ button:active {
     color: #FFFFFF;
 }
 .frame2_text h1 {
+    line-height: 60px;
     font-size: 40px;
 }
 .frame2_text p {
@@ -209,20 +214,43 @@ button:active {
     margin-top: 141px;
     margin-left: 29px;
 }
-.frame2_button {
+.frame2_button, .frame3_button {
     position: absolute; 
     width: 542px;
     height: 52px;
     bottom: 0;
 }
-.frame2_button button {
+.frame2_button button, .frame3_button button {
     width: 542px;
     height: 52px;
 }
 .card_contacts_3 {
     margin-left: 730px;
 }
-.form {
+.frame3_text {
+    position: absolute;
+    z-index: 2;
+    width: 528px;
+    height: 204px;
+    color: #FFFFFF;
+}
+.frame3_text h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.frame3_text p {
+    font-size: 20px;
+    line-height: 28px;
+}
+.frame3_image {
+    position: absolute;
+    z-index: 1;
+    margin-top: 75px;
+    margin-left: 271px;
+}
+.form_card {
     position: absolute;
     background-color: #FFFFFF;
     width: 1200px;
