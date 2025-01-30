@@ -98,6 +98,54 @@ body {
     margin-left: 120px;
     color: #FFFFFF;
 }
+.frame1 {
+    position: absolute;
+    width: 1120px;
+    height: 416px;
+    margin: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.frame1_text {
+    width: 728px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.frame1_text h1, p {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+.frame1_text h1 {
+    font-size: 40px;
+}
+.frame1_text p {
+    font-size: 20px;
+}
+.frame1_images {
+    width: 1120px;
+    height: 148px;
+    display: flex;
+    justify-content: space-between;
+}
+.frame1_buttons {
+    width: 1120px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+.frame1_buttons button {
+    width: 542px;
+    border-radius: 8px;
+    background-color: #4B2EC8;
+    border: none;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
 .card_contacts_2, .card_contacts_3 {
     width: 590px;
     height: 440px;
@@ -105,6 +153,56 @@ body {
 }
 .card_contacts_2 {
     margin-left: 120px;
+}
+.frame2 {
+    position: absolute;
+    width: 542px;
+    height: 392px;
+    margin-top: 24px;
+    margin-left: 24px;
+}
+.frame2_text {
+    position: absolute;
+    width: 386px;
+    height: 116px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.frame2_text h1, p {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color: #FFFFFF;
+}
+.frame2_text h1 {
+    font-size: 40px;
+}
+.frame2_text p {
+    font-size: 20px;
+}
+.frame2_image {
+    position: absolute;
+    width: 484px;
+    height: 174px;
+    margin-top: 141px;
+    margin-left: 29px;
+}
+.frame2_button {
+    position: absolute; 
+    width: 542px;
+    height: 52px;
+    bottom: 0;
+}
+.frame2_button button {
+    width: 542px;
+    height: 52px;
+    border-radius: 8px;
+    background-color: #4B2EC8;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
 }
 .card_contacts_3 {
     margin-left: 730px;
