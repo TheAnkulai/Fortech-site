@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 html {
-    font-family: 'Montope', sans-serif;
+    font-family: Mont, sans-serif;
 }
 body {
     margin: 0;
@@ -24,11 +24,13 @@ body {
     z-index: 1;
 }
 .header {
-    position: absolute;
+    position: fixed;
+    z-index: 5;
     width: 1200px;
     height: 40px;
     margin-left: 120px;
     margin-top: 30px;
+    background-color: #0C0B3C;
     color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -52,7 +54,7 @@ body {
 }
 .menu {
     position: absolute;
-    width: 90%;
+    width: 80%;
     height: 100%;
     padding-right: 5px;
 }
