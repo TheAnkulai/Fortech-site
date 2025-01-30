@@ -11,7 +11,6 @@ body {
     margin: 0 auto;
     width: 1440px;
     height: 1979px;
-    /*border: 2px solid white;*/
 }
 .background_bottom {
     position: absolute;
@@ -27,7 +26,6 @@ body {
     height: 40px;
     margin-left: 120px;
     margin-top: 30px;
-    border: 2px solid white;
     color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -42,12 +40,51 @@ body {
     margin-top: 8px;
     margin-left: 10px;
 }
-.navbar_table {
+.navbar_text {
     position: absolute;
-    border: #FFFFFF solid 2px;
     width: 531px;
     height: 24px;
     right: 0;
+    display: inline-block;
+}
+.menu {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    padding-right: 5px;
+}
+.menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.menu li {
+    font-family: sans-serif;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.language {
+    width: 10%;
+    height: 20px;
+    position: absolute;
+    padding-left: 5px;
+    right: 0;
+}
+.language ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.language li {
+    font-family: sans-serif;
 }
 .card_contacts_1, .card_contacts_2, .card_contacts_3 {
     position: absolute;
