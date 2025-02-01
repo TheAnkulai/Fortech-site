@@ -6,6 +6,18 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
         <title>Fortech</title>
+        <script type="text/javascript">
+            function valid(form) {
+                var fail = false;
+                var name = form.name.value;
+                if (name == "" || name == " ") {
+                    fail = "абоба";
+                }
+                if (fail) {
+                    alert(fail);
+                }
+            }
+        </script>
     </head>
     <body>
         <div class="background">
@@ -84,15 +96,22 @@
                 </div>
             </div>
             <div class="form_card">
-                <div class="form_text"></div>
+                <div class="form_text">
+                    <h1></h1>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
                 <div class="form">
-                    <form>
-                        <input type="text" name="" id="">
-                        <input type="email" name="" id="">
-                        <input type="text" name="" id="">
-                        <input type="file" name="" id="">
-                        <p></p>
-                        <input type="submit" value="Отправить">
+                    <form class="_form" action="" method="post" id="form">
+                        <div class="formColumn">
+                            <input name="name" type="text" placeholder="Имя">
+                            <input name="email" type="email" placeholder="Email">
+                            <input name="phone" type="tel" placeholder="Номер телефона" value="+7">
+                            <input type="file" placeholder="Краткое описание">
+                            <p></p>
+                            <input type="button" onclick="valid(document.getElementById('form'))">
+                        </div>
                     </form>
                 </div>
             </div>
