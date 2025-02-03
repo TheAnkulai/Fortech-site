@@ -9,6 +9,7 @@ body {
     padding: 0;
     /*background-color: #0C0B3C;*/
 }
+
 .background {
     background-color: #0C0B3C;
     margin: 0 auto;
@@ -18,7 +19,8 @@ body {
 .background_bottom {
     position: absolute;
     background-color: #4B2EC8;
-    margin-top: 1483px;
+    margin-top: auto;
+    top: 1483px;
     width: 1440px;
     height: 496px;
     z-index: 1;
@@ -26,14 +28,20 @@ body {
 .header {
     position: fixed;
     z-index: 5;
-    width: 1200px;
+    width: 1440px;
     height: 40px;
-    margin-left: 120px;
-    margin-top: 30px;
+    padding: 40px 120px ;
     background-color: #0C0B3C;
     color: #FFFFFF;
     display: flex;
     align-items: center;
+}
+.header-elements {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo {
     width: 180;
@@ -49,7 +57,7 @@ body {
     position: absolute;
     width: 531px;
     height: 24px;
-    right: 0;
+    right: 120px;
     display: inline-block;
 }
 .menu {
@@ -128,7 +136,7 @@ button:active {
 .card_contacts_1 {
     width: 1200px;
     height: 496px;
-    margin-top: 150px;
+    top: 150px;
     margin-left: 120px;
     color: #FFFFFF;
 }
@@ -177,7 +185,7 @@ button:active {
 .card_contacts_2, .card_contacts_3 {
     width: 590px;
     height: 440px;
-    margin-top: 666px;
+    top: 666px;
 }
 .card_contacts_2 {
     margin-left: 120px;
@@ -257,7 +265,7 @@ button:active {
     background-color: #FFFFFF;
     width: 1200px;
     height: 506px;
-    margin-top: 1206px;
+    top: 1206px;
     margin-left: 120px;
     border-radius: 10px;
     z-index: 2;
@@ -307,7 +315,7 @@ button:active {
     border-image: initial;
     outline: none;
     border-bottom: 1px solid rgb(209, 213, 219);
-    border-radius: 0px !important;
+    border-radius: 0px;
 }
 .form input:not([type='button']):hover {
     border-bottom: #4B2EC8 1px solid;
@@ -334,7 +342,7 @@ button:active {
     border-image: initial;
     outline: none;
     border-bottom: 1px solid rgb(209, 213, 219);
-    border-radius: 0px !important;
+    border-radius: 0px;
 }
 .form input[type='tel'] {
     display: flex;
@@ -358,7 +366,7 @@ button:active {
     border-image: initial;
     outline: none;
     border-bottom: 1px solid rgb(209, 213, 219);
-    border-radius: 0px !important;
+    border-radius: 0px;
 }
 .form input[type='file'] {
     resize: none;
@@ -382,17 +390,25 @@ button:active {
     border-image: initial;
     outline: none;
     border-bottom: 1px solid rgb(209, 213, 219);
-    border-radius: 0px !important;
+    border-radius: 0px;
+}
+.error-messages {
+    font-style: inherit;
+    min-height: 20px;
+    color: rgb(242, 94, 94);
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    padding: 5px;
 }
 .footer, .links, .copyright {
     border: #0C0B3C solid 2px;
 }
 .footer {
     position: absolute;
-    z-index: 2;
     width: 1280px;
     height: 232px;
-    margin-top: 1725px;
+    bottom: 22px;
     margin-left: 80px;
     padding: 48px 32px;
     display: flex;

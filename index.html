@@ -7,40 +7,74 @@
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap" rel="stylesheet">
         <title>Fortech</title>
         <script type="text/javascript">
-            function valid(form) {
-                var fail = false;
-                var name = form.name.value;
-                if (name == "" || name == " ") {
-                    fail = "абоба";
+            function valid() {
+                let form = document.getElementById("form");
+                let name = form.elements["name"];
+                let email = form.elements["email"];
+                let phone = form.elements["phone"];
+                let errorMessages = form.getElementsByClassName("error-messages");
+
+                for (let msg of errorMessages) {
+                    msg.textContent = "";
                 }
-                if (fail) {
-                    alert(fail);
+
+                let isValid = true;
+
+                if (name.value.trim() === "") {
+                    errorMessages[0].textContent = "Поле имени не должно быть пустым!";
+                    isValid = false;
+                }
+
+                let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                if (email.value.trim() === "") {
+                    errorMessages[1].textContent = "Поле email не должно быть пустым!";
+                    isValid = false;
+                } else if (!emailRegex.test(email.value)) {
+                    errorMessages[1].textContent = "Некорректный email!";
+                    isValid = false;
+                }
+
+                let phoneRegex = /^\+7\d{10}$/;
+                if (phone.value.trim() === "") {
+                    errorMessages[2].textContent = "Поле телефона не должно быть пустым!";
+                    isValid = false;
+                } else if (!phoneRegex.test(phone.value)) {
+                    errorMessages[2].textContent = "Некорректный номер телефона! Формат: +7XXXXXXXXXX";
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    alert(`Данные отправлены!\nИмя: ${name.value}\nEmail: ${email.value}\nТелефон: ${phone.value}`);
                 }
             }
+
+            document.getElementById("submit").addEventListener("click", valid);
         </script>
     </head>
     <body>
         <div class="background">
             <div class="header">
-                <div class="logo">
-                    <img id="logo" src="svg/logo.svg" alt="Fortech">
-                </div>
-                <div class="navbar_text">
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="#">Продукты</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Проеткы</a></li>
+                <div class="header-elements">
+                    <div class="logo">
+                        <img id="logo" src="svg/logo.svg" alt="Fortech">
+                    </div>
+                    <div class="navbar_text">
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#">Продукты</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Проеткы</a></li>
 
-                        </ul>
+                            </ul>
                         
-                    </nav>
-                    <div class="language">
-                        <ul>
-                            <li>Ru</li>
-                            <li>En</li>
-                        </ul>
+                        </nav>
+                        <div class="language">
+                            <ul>
+                                <li>Ru</li>
+                                <li>En</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,17 +140,20 @@
                     <form class="_form" action="" method="post" id="form">
                         <div class="formColumn">
                             <input name="name" type="text" placeholder="Имя">
+                            <p class="error-messages"></p>
                             <input name="email" type="email" placeholder="Email">
+                            <p class="error-messages"></p>
                             <input name="phone" type="tel" placeholder="Номер телефона" value="+7">
+                            <p class="error-messages"></p>
                             <input type="file" placeholder="Краткое описание">
                             <p></p>
-                            <input type="button" onclick="valid(document.getElementById('form'))">
+                            <input type="button" id="submit" onclick="valid()" value="Отправить">
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="background_bottom"></div>
-            <div class="footer">
+            <div class="background_bottom">
+                <div class="footer">
                 <div class="links"></div>
                 <div class="messangers">
                     <div class="telegram_logo"><a href="https://t.me/fortech_hr" target="_blank"><img id="tg_logo" src="svg/tg_logo.svg" alt="Telegram"></a></div>
@@ -125,6 +162,8 @@
                 </div>
                 <div class="copyright"></div>
             </div>
+            </div>
+            
         </div>
         
     </body>
