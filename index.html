@@ -130,37 +130,49 @@
                 </div>
             </div>
             <div class="form_card">
-                <div class="form_text">
-                    <h1></h1>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+                <div class="form-style-block">
+                    <div class="form_text">
+                        <h1>Заинтересовала наша компания?</h1>
+                        <p>Тогда мы будем искренне рады, если вы решите написать нам!</p>
+                        <p>Обсудим тонкости вашего проекта и поможем советом!</p>
+                        <p>Пиши на почту: <a href="mailto:hello@fortech.dev">hello@fortech.dev</a></p>
+                    </div>
+                    <div class="form">
+                        <form class="_form" action="" method="post" id="form">
+                            <div class="formColumn">
+                                <input name="name" type="text" placeholder="Имя">
+                                <p class="error-messages"></p>
+                                <input name="email" type="email" placeholder="Email">
+                                <p class="error-messages"></p>
+                                <input name="phone" type="tel" placeholder="Номер телефона" value="+7">
+                                <p class="error-messages"></p>
+                                <input id="file" type="file" accept=".pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt" placeholder="Краткое описание">
+                                <p class="extensions">Please upload a file with the following extension: .pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt</p>
+                            </div>
+                        </form>
+                    </div>
+                    
                 </div>
-                <div class="form">
-                    <form class="_form" action="" method="post" id="form">
-                        <div class="formColumn">
-                            <input name="name" type="text" placeholder="Имя">
-                            <p class="error-messages"></p>
-                            <input name="email" type="email" placeholder="Email">
-                            <p class="error-messages"></p>
-                            <input name="phone" type="tel" placeholder="Номер телефона" value="+7">
-                            <p class="error-messages"></p>
-                            <input type="file" placeholder="Краткое описание">
-                            <p></p>
-                            <input type="button" id="submit" onclick="valid()" value="Отправить">
-                        </div>
-                    </form>
-                </div>
+                <input type="button" id="submit" onclick="valid()"  value="Отправить">
             </div>
             <div class="background_bottom">
                 <div class="footer">
-                <div class="links"></div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#">Преимущества</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Портфолио</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
                 <div class="messangers">
                     <div class="telegram_logo"><a href="https://t.me/fortech_hr" target="_blank"><img id="tg_logo" src="svg/tg_logo.svg" alt="Telegram"></a></div>
                     <div class="instagram_logo"><a href="#" target="_blank"><img id="inst_logo" src="svg/insta_logo.svg" alt="Instagram"></a></div>
                     <div class="vk_logo"><a href="https://vk.com/fortech_dev" target="_blank"><img id="vk_logo" src="svg/vk_logo.svg" alt="VK"></a></div>
                 </div>
-                <div class="copyright"></div>
+                <div class="copyright">
+                    <p>© 2022 Fortech. <a href="#">Privacy policy</a></p>
+                </div>
             </div>
             </div>
             
