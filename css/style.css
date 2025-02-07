@@ -7,7 +7,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /*background-color: #0C0B3C;*/
 }
 
 .background {
@@ -16,7 +15,7 @@ body {
     width: 1440px;
     height: 1979px;
 }
-.background_bottom {
+.background-bottom {
     position: absolute;
     background-color: #4B2EC8;
     margin-top: auto;
@@ -44,14 +43,10 @@ body {
     justify-content: space-between;
 }
 .logo {
-    width: 180;
-    height: 40;
-    margin-left: 0;
-    margin-top: 0;
-}
-#logo {
-    margin-top: 8px;
+    width: 180px;
+    height: 40px;
     margin-left: 10px;
+    margin-top: 8px;
 }
 .navbar_text {
     position: absolute;
@@ -290,7 +285,7 @@ button:active {
 .form_text p {
     color: #6B7280;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 600;
 }
 .form_text a {
     color: #4B2EC8;
@@ -312,33 +307,15 @@ button:active {
     flex-direction: column;
     width: 100%;
 }
-.form input[type='text'] {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: rgb(107, 114, 128);
-    padding: 8px 12px;
-    height: 32px;
-    background: rgb(249, 250, 251);
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    outline: none;
-    border-bottom: 1px solid rgb(209, 213, 219);
-}
-.form input:not([type='button']):hover {
+.form input:hover {
     border-bottom: #4B2EC8 1px solid;
 }
-.form input[type='email'] {
+.form input {
     display: flex;
     width: 100%;
     box-sizing: border-box;
     font-style: normal;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -346,45 +323,6 @@ button:active {
     color: rgb(107, 114, 128);
     padding: 8px 12px;
     height: 32px;
-    background: rgb(249, 250, 251);
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    outline: none;
-    border-bottom: 1px solid rgb(209, 213, 219);
-}
-.form input[type='tel'] {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.02em;
-    color: rgb(107, 114, 128);
-    padding: 8px 12px;
-    height: 32px;
-    background: rgb(249, 250, 251);
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    outline: none;
-    border-bottom: 1px solid rgb(209, 213, 219);
-}
-.form input[type='file'] {
-    resize: none;
-    width: 100%;
-    font-family: Mont, serif;
-    font-style: normal;
-    box-sizing: border-box;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    color: rgb(107, 114, 128);
-    padding: 8px 40px 8px 12px;
-    height: 32px;
-    margin-bottom: 0px;
     background: rgb(249, 250, 251);
     border-top: none;
     border-right: none;
