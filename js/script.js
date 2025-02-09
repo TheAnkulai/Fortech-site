@@ -1,5 +1,9 @@
-function valid() {
-    let form = document.getElementById("form");
+document.getElementById("form").onsubmit = function(event) {
+    event.preventDefault(); // Предотвращаем стандартную отправку формы
+    valid(this); // Передаём саму форму в функцию
+};
+
+function valid(form) {
     let name = form.elements["name"];
     let email = form.elements["email"];
     let phone = form.elements["phone"];
@@ -30,7 +34,6 @@ function valid() {
 
     if (isValid) {
         alert(`Данные отправлены!\nИмя: ${name.value}\nEmail: ${email.value}\nТелефон: ${phone.value}`);
+        form.submit(); // Можно оставить, если нужно реально отправлять форму
     }
 }
-
-document.getElementById("submit").addEventListener("click", valid);

@@ -6,112 +6,111 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="js/script.js" rel="text/javascript">
         <title>Fortech</title>
-        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
-        <div class="background">
-            <div class="header">
-                <div class="header-elements">
-                    <div class="logo">
-                        <img id="logo" src="svg/logo.svg" alt="Fortech">
-                    </div>
-                    <div class="navbar_text">
-                        <nav class="menu">
-                            <ul>
-                                <li><a href="#">Продукты</a></li>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Контакты</a></li>
-                                <li><a href="#">Проеткы</a></li>
-
-                            </ul>
-                        
-                        </nav>
-                        <div class="language">
-                            <ul>
-                                <li>Ru</li>
-                                <li>En</li>
-                            </ul>
+            <header class="style__header">
+                <div class="style__Logo">
+                    <img src="svg/logo.svg" alt="Fortech">
+                </div>
+                <div class="style__HeaderMenu">
+                    <ul class="style__HeaderMenuElements">
+                        <li><a href="#">Продукты</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Проеткы</a></li>
+                    </ul>
+                </div>
+                <div class="style__HeaderLanguageSelect">
+                    <ul class="style__HeaderLanguageSelectElements">
+                        <li>Ru</li>
+                        <li>En</li>
+                    </ul>
+                </div>
+            </header>
+            <main>
+                <section>
+                    <div class="card_contacts_1">
+                        <div class="frame1">
+                            <div class="frame1_text">
+                               <h1>Комплексное решение</h1>
+                               <p>Комплексное решение для дистрибьютора косметических средств</p>
+                            </div>
+                            <div class="frame1_images">
+                               <img src="svg/tube_waterdrop.svg" alt="">
+                                <img src="svg/tube_soap.svg" alt="">
+                                <img src="svg/brush.svg" alt="">
+                                <img src="svg/tube_hexagon.svg" alt="">
+                                <img src="svg/tube_cream.svg" alt="">
+                                <img src="svg/tube_waterdrop.svg" alt="">
+                                <img src="svg/tube_soap.svg" alt="">
+                                <img src="svg/brush.svg" alt="">
+                                <img src="svg/tube_hexagon.svg" alt="">
+                            </div>
+                            <div class="frame1_buttons">
+                                <button>Панель администратора</button>
+                                <button>Мобильное приложение</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="card_contacts_1">
-                <div class="frame1">
-                    <div class="frame1_text">
-                        <h1>Комплексное решение</h1>
-                        <p>Комплексное решение для дистрибьютора косметических средств</p>
-                    </div>
-                    <div class="frame1_images">
-                        <img src="svg/tube_waterdrop.svg" alt="">
-                        <img src="svg/tube_soap.svg" alt="">
-                        <img src="svg/brush.svg" alt="">
-                        <img src="svg/tube_hexagon.svg" alt="">
-                        <img src="svg/tube_cream.svg" alt="">
-                        <img src="svg/tube_waterdrop.svg" alt="">
-                        <img src="svg/tube_soap.svg" alt="">
-                        <img src="svg/brush.svg" alt="">
-                        <img src="svg/tube_hexagon.svg" alt="">
-                    </div>
-                    <div class="frame1_buttons">
-                        <button>Панель администратора</button>
-                        <button>Мобильное приложение</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card_contacts_2">
-                <div class="frame2">
-                    <div class="frame2_text">
-                        <h1>CRM система</h1>
-                        <p>CRM система для управления работой каршеринговой компании</p>
-                    </div>
-                    <div class="frame2_image">
-                        <img src="svg/car.svg" alt="">
-                    </div>
-                    <div class="frame2_button">
-                        <button>Покажите</button>
-                    </div>
-                </div>
-            </div>
-            <div class="card_contacts_3">
-                <div class="frame3">
-                    <div class="frame3_text">
-                        <h1>Электронный документооборот</h1>
-                        <p>Решение для автоматизации процессов документовоборудования для строительной отрасли</p>
-                    </div>
-                    <div class="frame3_image">
-                        <img src="svg/doc_logo.svg" alt="document">
-                    </div>
-                    <div class="frame3_button">
-                        <button>Покажите</button>
-                    </div>
-                </div>
-            </div>
-            <div class="form_card">
-                <div class="form-style-block">
-                    <div class="form_text">
-                        <h1>Заинтересовала наша компания?</h1>
-                        <p>Тогда мы будем искренне рады, если вы решите написать нам!</p>
-                        <p>Обсудим тонкости вашего проекта и поможем советом!</p>
-                        <p>Пиши на почту: <a href="mailto:hello@fortech.dev">hello@fortech.dev</a></p>
-                    </div>
-                    <div class="form">
-                        <form class="_form" action="" method="post" id="form">
-                            <div class="formColumn">
-                                <input name="name" type="text" placeholder="Имя">
-                                <p class="error-messages"></p>
-                                <input name="email" type="email" placeholder="Email">
-                                <p class="error-messages"></p>
-                                <input name="phone" type="tel" placeholder="Номер телефона" value="+7">
-                                <p class="error-messages"></p>
-                                <input id="file" type="file" accept=".pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt" placeholder="Краткое описание">
-                                <p class="extensions">Please upload a file with the following extension: .pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt</p>
+                </section>
+                <section>
+                    <div class="card_contacts_2">
+                        <div class="frame2">
+                            <div class="frame2_text">
+                                <h1>CRM система</h1>
+                                <p>CRM система для управления работой каршеринговой компании</p>
                             </div>
-                        </form>
+                            <div class="frame2_image">
+                                <img src="svg/car.svg" alt="">
+                            </div>
+                            <div class="frame2_button">
+                                <button>Покажите</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_contacts_3">
+                        <div class="frame3">
+                            <div class="frame3_text">
+                                <h1>Электронный документооборот</h1>
+                                <p>Решение для автоматизации процессов документовоборудования для строительной отрасли</p>
+                            </div>
+                            <div class="frame3_image">
+                                <img src="svg/doc_logo.svg" alt="document">
+                            </div>
+                            <div class="frame3_button">
+                                <button>Покажите</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="form_card">
+                    <div class="form-style-block">
+                        <div class="form_text">
+                            <h1>Заинтересовала наша компания?</h1>
+                            <p>Тогда мы будем искренне рады, если вы решите написать нам!</p>
+                            <p>Обсудим тонкости вашего проекта и поможем советом!</p>
+                            <p>Пиши на почту: <a href="mailto:hello@fortech.dev">hello@fortech.dev</a></p>
+                        </div>
+                        <div class="form">
+                            <form class="_form" action="" method="post" id="form">
+                                <div class="formColumn">
+                                    <input name="name" type="text" placeholder="Имя">
+                                    <p class="error-messages"></p>
+                                    <input name="email" type="email" placeholder="Email">
+                                    <p class="error-messages"></p>
+                                    <input name="phone" type="tel" placeholder="Номер телефона" value="+7">
+                                    <p class="error-messages"></p>
+                                    <input id="file" type="file" accept=".pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt" placeholder="Краткое описание">
+                                    <p class="extensions">Please upload a file with the following extension: .pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt</p>
+                                </div>
+                                <button type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    
                     </div>
                     
                 </div>
-                <input type="button" id="submit" onclick="valid()"  value="Отправить">
-            </div>
+            </main>
             <div class="background-bottom">
                 <div class="footer">
                 <div class="links">
@@ -132,8 +131,6 @@
                 </div>
             </div>
             </div>
-            
-        </div>
-        
     </body>
+    <script type="text/javascript" src="js/script.js"></script>
 </html>
