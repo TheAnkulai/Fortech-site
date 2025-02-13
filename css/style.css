@@ -151,13 +151,16 @@ button:active {
 .CardContactsSmall {
     width: 590px;
     height: 440px;
-    top: 666px;
     padding: 24px;
 }
 .CardContactsSmall__Frame {
     width: 100%;
     height: 100%;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+} 
 .CardContactsSmall__Text {
     width: 100%;
     height: 116px;
@@ -169,91 +172,65 @@ button:active {
     margin: 0;
     color: #FFFFFF;
 }
-.CardContactsSmall__Frame h1 {
+.CardContactsSmall__Frame h2 {
     line-height: 60px;
     font-size: 40px;
 }
 .CardContactsSmall__Frame p {
     font-size: 20px;
 }
-.CardContactsSmall__Image {
-    position: absolute;
+.CardContactsSmallLeft__Image {
     width: 484px;
     height: 174px;
-    margin-top: 141px;
-    margin-left: 29px;
 }
 .CardContactsSmall__Button {
     width: 100%;
     height: 52px;
-    bottom: 0;
 }
-.frame2_button button, .frame3_button button {
+.CardContactsSmall__Button button {
     width: 542px;
     height: 52px;
 }
-.card_contacts_3 {
-    margin-left: 730px;
-}
-.frame3_text {
-    position: absolute;
-    z-index: 2;
-    width: 528px;
-    height: 204px;
-    color: #FFFFFF;
-}
-.frame3_text h1 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 60px;
-}
-.frame3_text p {
-    font-size: 20px;
-    line-height: 28px;
-}
-.frame3_image {
+.CardContactsSmallRight__Image {
     position: absolute;
     z-index: 1;
     margin-top: 75px;
     margin-left: 271px;
 }
-.form_card {
-    position: absolute;
+.style__FormCard {
     background-color: #FFFFFF;
     width: 1200px;
     height: 506px;
     top: 1206px;
-    margin-left: 120px;
     border-radius: 10px;
     z-index: 2;
 }
-.form-style-block {
+.FormCard__Frame {
     padding: 74px 80px;
     display: flex;
     justify-content: space-between;
 }
-.form_text {
+.FormCard__Text {
     display: flex;
     width: 50%;
     flex-direction: column;
     justify-content: space-between;
     padding-right: 60px;
 }
-.form_text h1 {
+.FormCard__Text h2 {
     font-size: 36px;
     font-weight: 800;
     margin: 0;
 }
-.form_text p {
+.FormCard__Text p {
     color: #6B7280;
     font-size: 18px;
     font-weight: 600;
 }
-.form_text a {
+.FormCard__Text a {
     color: #4B2EC8;
 }
-.form {
+.FormCard__FormFrame {
     width: 50%;
     position: relative;
     display: flex;
