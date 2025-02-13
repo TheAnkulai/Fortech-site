@@ -7,7 +7,7 @@ function valid(form) {
     let name = form.elements["name"];
     let email = form.elements["email"];
     let phone = form.elements["phone"];
-    let errorMessages = form.getElementsByClassName("error-messages");
+    let errorMessages = form.getElementsByClassName("Form__ErrorMessages");
 
     for (let msg of errorMessages) {
         msg.textContent = "";

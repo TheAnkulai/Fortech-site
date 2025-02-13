@@ -91,21 +91,23 @@
                                 <div class="FormCard__Frame">
                                     <div class="FormCard__Text">
                                         <h2>Заинтересовала наша компания?</h2>
-                                        <p>Тогда мы будем искренне рады, если вы решите написать нам!</p>
-                                        <p>Обсудим тонкости вашего проекта и поможем советом!</p>
+                                        <div class="FormCard__Text__MiddlePart">
+                                            <p>Тогда мы будем искренне рады, если вы решите написать нам!</p>
+                                            <p>Обсудим тонкости вашего проекта и поможем советом!</p>
+                                        </div>
                                         <p>Пиши на почту: <a href="mailto:hello@fortech.dev">hello@fortech.dev</a></p>
                                     </div>
                                     <div class="FormCard__FormFrame">
-                                        <form class="_form" action="" method="post" id="form">
-                                            <div class="formColumn">
+                                        <form class="FormCard__Form" action="" method="post" id="form">
+                                            <div class="Form__FormInput">
                                                 <input name="name" type="text" placeholder="Имя">
-                                                <p class="error-messages"></p>
+                                                <p class="Form__ErrorMessages"></p>
                                                 <input name="email" type="email" placeholder="Email">
-                                                <p class="error-messages"></p>
+                                                <p class="Form__ErrorMessages"></p>
                                                 <input name="phone" type="tel" placeholder="Номер телефона" value="+7">
-                                                <p class="error-messages"></p>
+                                                <p class="Form__ErrorMessages"></p>
                                                 <input id="file" type="file" accept=".pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt" placeholder="Краткое описание">
-                                                <p class="extensions">Please upload a file with the following extension: .pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt</p>
+                                                <p class="Form__Extensions">Please upload a file with the following extension: .pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt</p>
                                             </div>
                                             <button type="submit">Отправить</button>
                                         </form>

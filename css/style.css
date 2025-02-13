@@ -214,8 +214,11 @@ button:active {
     display: flex;
     width: 50%;
     flex-direction: column;
-    justify-content: space-between;
     padding-right: 60px;
+}
+.FormCard__Text__MiddlePart {
+    margin-top: 22px;
+    margin-bottom: 14px;
 }
 .FormCard__Text h2 {
     font-size: 36px;
@@ -237,20 +240,21 @@ button:active {
     align-items: center;
     justify-content: center;
 }
-._form {
+.FormCard__Form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
 }
-.formColumn {
+.Form__FormInput {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.form input:hover {
+.Form__FormInput input:hover {
     border-bottom: #4B2EC8 1px solid;
 }
-.form input {
+.Form__FormInput input {
     display: flex;
     width: 100%;
     box-sizing: border-box;
@@ -270,7 +274,7 @@ button:active {
     outline: none;
     border-bottom: 1px solid rgb(209, 213, 219);
 }
-.error-messages {
+.Form__ErrorMessages {
     font-style: inherit;
     min-height: 30px;
     color: rgb(242, 94, 94);
@@ -279,15 +283,14 @@ button:active {
     letter-spacing: 0.02em;
     padding: 5px;
 }
-.extensions {
+.Form__Extensions {
     color: #6B7280;
     font-size: 10px;
 }
-.form_card input[type='button'] {
-    position: absolute;
-    width: 155px;
+.FormCard__Form button {
+    margin-top: 50px;
+    width: 30vw;
     height: 56px;
-    right: 80px;
     background-color: #4B2EC8;
     border: none;
     border-radius: 8px;
