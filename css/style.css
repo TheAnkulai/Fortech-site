@@ -291,17 +291,6 @@ button:active {
     margin-top: 50px;
     width: 30vw;
     height: 56px;
-    background-color: #4B2EC8;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    color: #FFFFFF;
-}
-.form_card input[type='button']:hover {
-    background-color: #6F58D3;
-}
-.form_card input[type='button']:active {
-    background-color: #2E1598;
 }
 .background-bottom {
     position: absolute;
@@ -312,23 +301,27 @@ button:active {
     height: 496px;
     z-index: 1;
 }
-.footer {
-    position: absolute;
-    width: 1280px;
-    height: 232px;
-    bottom: 22px;
-    margin-left: 80px;
-    padding: 48px 32px;
+.style__Footer {
+    width: 100%;
+    min-height: 496px;
+    margin-top: -229px;
+    background-color: #4B2EC8;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+.Footer__Contacts {
+    padding-bottom: 70px;
     display: flex;
     gap: 38px;
     flex-direction: column;
     align-items: center;
 }
-.links {
+.Contacts__Links {
     width: auto;
     height: auto;
 }
-.links ul {
+.Contacts__Links ul {
     padding: 0;
     margin: 0;
     display: flex;
@@ -337,30 +330,30 @@ button:active {
     list-style: none;
     color: #FFFFFF;
 }
-.links li {
+.Contacts__Links li {
     padding: 8px 20px;
 }
-.links a {
+.Contacts__Links a {
     color: #FFFFFF;
     text-decoration: none;
 }
-.messangers {
+.Contacts__Messangers {
     width: 148px;
     height: 24px;
     display: flex;
     justify-content: space-between;
 }
-.copyright {
+.Contacts__Copyright {
     width: 240px;
     height: 24px;
     display: flex;
     justify-content: space-around;
     
 }
-.copyright p {
+.Contacts__Copyright p {
     color: #FFFFFF;
 }
-.copyright a {
+.Contacts__Copyright a {
     color: #FFFFFF;
     text-decoration: none;
 }
