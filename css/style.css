@@ -104,47 +104,45 @@ button:active {
     width: 1200px;
     height: 496px;
     margin-top: 20px;
+    padding: 40px;
 }
-.frame1 {
-    position: absolute;
-    width: 1120px;
-    height: 416px;
-    margin: 40px 40px;
+.CardContactsLarge__Frame {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.frame1_text {
+.CardContactsLarge__Text {
     width: 728px;
     height: 88px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
-.frame1_text h1, p {
+.CardContactsLarge__Text h2, p {
     margin: 0;
-    font-family: 'Manrope', sans-serif;
 }
-.frame1_text h1 {
+.CardContactsLarge__Text h2 {
     line-height: 60px;
     font-size: 40px;
 }
-.frame1_text p {
+.CardContactsLarge__Text p {
     font-size: 20px;
 }
-.frame1_images {
-    width: 1120px;
+.CardContactsLarge__Images {
+    width: 100%;
     height: 148px;
     display: flex;
     justify-content: space-between;
 }
-.frame1_buttons {
-    width: 1120px;
+.CardContactsLarge__Buttons {
+    width: 100%;
     height: 52px;
     display: flex;
     justify-content: space-between;
 }
-.frame1_buttons button {
+.CardContactsLarge__Buttons button {
     width: 542px;
 }
 .DoubleCardSection {
@@ -154,44 +152,39 @@ button:active {
     width: 590px;
     height: 440px;
     top: 666px;
+    padding: 24px;
 }
-.frame2, .frame3 {
-    position: absolute;
-    width: 542px;
-    height: 392px;
-    margin-top: 24px;
-    margin-left: 24px;
+.CardContactsSmall__Frame {
+    width: 100%;
+    height: 100%;
 }
-.frame2_text {
-    position: absolute;
-    width: 386px;
+.CardContactsSmall__Text {
+    width: 100%;
     height: 116px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
-.frame2_text h1, p {
+.CardContactsSmall__Frame h2, p {
     margin: 0;
-    font-family: 'Manrope', sans-serif;
     color: #FFFFFF;
 }
-.frame2_text h1 {
+.CardContactsSmall__Frame h1 {
     line-height: 60px;
     font-size: 40px;
 }
-.frame2_text p {
+.CardContactsSmall__Frame p {
     font-size: 20px;
 }
-.frame2_image {
+.CardContactsSmall__Image {
     position: absolute;
     width: 484px;
     height: 174px;
     margin-top: 141px;
     margin-left: 29px;
 }
-.frame2_button, .frame3_button {
-    position: absolute; 
-    width: 542px;
+.CardContactsSmall__Button {
+    width: 100%;
     height: 52px;
     bottom: 0;
 }
