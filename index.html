@@ -8,135 +8,134 @@
         <title>Fortech</title>
     </head>
     <body>
-            <header class="style__header">
-                <div class="style__Logo">
-                    <img src="svg/logo.svg" alt="Fortech">
-                </div>
-                <div class="style__HeaderMenu">
-                    <ul class="style__HeaderMenuElements">
-                        <li><a href="#">Продукты</a></li>
-                        <li><a href="#">О нас</a></li>
+        <header class="style__header">
+            <div class="style__Logo">
+                <img src="svg/logo.svg" alt="Fortech">
+            </div>
+            <div class="style__HeaderMenu">
+                <ul class="style__HeaderMenuElements">
+                    <li><a href="#">Продукты</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Проеткы</a></li>
+                </ul>
+            </div>
+            <div class="style__HeaderLanguageSelect">
+                <ul class="style__HeaderLanguageSelectElements">
+                    <li class="LanguageSelect__Active">Ru</li>
+                    <li><a href="index_en.html">En</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="style__Content">
+            <div class="style__MainContainer">
+                <section class="style__NewSection">
+                    <div class="style__CardContacts CardContactsLarge">
+                        <div class="CardContactsLarge__Frame">
+                            <div class="CardContactsLarge__Text">
+                                <h2>Комплексное решение</h2>
+                                <p>Комплексное решение для дистрибьютора косметических средств</p>                                    </div>
+                            <div class="CardContactsLarge__Images">
+                                <img src="svg/tube_waterdrop.svg" alt="">
+                                <img src="svg/tube_soap.svg" alt="">
+                                <img src="svg/brush.svg" alt="">
+                                <img src="svg/tube_hexagon.svg" alt="">
+                                <img src="svg/tube_cream.svg" alt="">
+                                <img src="svg/tube_waterdrop.svg" alt="">
+                                <img src="svg/tube_soap.svg" alt="">
+                                <img src="svg/brush.svg" alt="">
+                                <img src="svg/tube_hexagon.svg" alt="">
+                            </div>
+                            <div class="CardContactsLarge__Buttons">
+                                <button>Панель администратора</button>
+                                <button>Мобильное приложение</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="style__NewSection DoubleCardSection">
+                    <div class="style__SectionFrame">
+                        <div class="style__CardContacts CardContactsSmall">
+                            <div class="CardContactsSmall__Frame">
+                                <div class="CardContactsSmall__Text">
+                                    <h2>CRM система</h2>
+                                    <p>CRM система для управления работой каршеринговой компании</p>
+                                </div>
+                                <div class="CardContactsSmallLeft__Image">
+                                    <img src="svg/car.svg" alt="">
+                                </div>
+                                <div class="CardContactsSmall__Button">
+                                    <button>Покажите</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="style__CardContacts CardContactsSmall">
+                            <div class="CardContactsSmall__Frame">
+                                <div class="CardContactsSmall__Text">
+                                    <h2>Электронный документооборот</h2>
+                                    <p>Решение для автоматизации процессов документовоборудования для строительной отрасли</p>
+                                </div>
+                                <div class="CardContactsSmallRight__Image">
+                                    <img src="svg/doc_logo.svg" alt="document">
+                                </div>
+                                <div class="CardContactsSmall__Button">
+                                    <button>Покажите</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="style__NewSection">
+                    <div class="style__FormCard">
+                        <div class="FormCard__Frame">
+                            <div class="FormCard__Text">
+                                <h2>Заинтересовала наша компания?</h2>
+                                <div class="FormCard__Text__MiddlePart">
+                                    <p>Тогда мы будем искренне рады, если вы решите написать нам!</p>
+                                    <p>Обсудим тонкости вашего проекта и поможем советом!</p>
+                                </div>
+                                <p>Пиши на почту: <a href="mailto:hello@fortech.dev">hello@fortech.dev</a></p>
+                            </div>
+                            <div class="FormCard__FormFrame">
+                                <form class="FormCard__Form" action="" method="post" id="form">
+                                    <div class="Form__FormInput">
+                                        <input name="name" type="text" placeholder="Имя">
+                                        <p class="Form__ErrorMessages"></p>
+                                        <input name="email" type="email" placeholder="Email">
+                                        <p class="Form__ErrorMessages"></p>
+                                        <input name="phone" type="tel" placeholder="Номер телефона" value="+7">
+                                        <p class="Form__ErrorMessages"></p>
+                                        <input id="file" type="file" accept=".pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt" placeholder="Краткое описание">
+                                        <p class="Form__Extensions">Please upload a file with the following extension: .pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt</p>
+                                    </div>
+                                    <button type="submit">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="style__Footer">
+            <div class="Footer__Contacts">
+                <div class="Contacts__Links">
+                    <ul>
+                        <li><a href="#">Преимущества</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Портфолио</a></li>
                         <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Проеткы</a></li>
                     </ul>
                 </div>
-                <div class="style__HeaderLanguageSelect">
-                    <ul class="style__HeaderLanguageSelectElements">
-                        <li class="LanguageSelect__Active">Ru</li>
-                        <li><a href="index_en.html">En</a></li>
-                    </ul>
+                <div class="Contacts__Messangers">
+                    <div class="telegram_logo"><a href="https://t.me/fortech_hr" target="_blank"><img id="tg_logo" src="svg/tg_logo.svg" alt="Telegram"></a></div>
+                    <div class="instagram_logo"><a href="#" target="_blank"><img id="inst_logo" src="svg/insta_logo.svg" alt="Instagram"></a></div>
+                    <div class="vk_logo"><a href="https://vk.com/fortech_dev" target="_blank"><img id="vk_logo" src="svg/vk_logo.svg" alt="VK"></a></div>
                 </div>
-            </header>
-            <main class="style__Content">
-                    <div class="style__MainContainer">
-                        <section class="style__NewSection">
-                            <div class="style__CardContacts CardContactsLarge">
-                                <div class="CardContactsLarge__Frame">
-                                    <div class="CardContactsLarge__Text">
-                                       <h2>Комплексное решение</h2>
-                                       <p>Комплексное решение для дистрибьютора косметических средств</p>
-                                    </div>
-                                    <div class="CardContactsLarge__Images">
-                                        <img src="svg/tube_waterdrop.svg" alt="">
-                                        <img src="svg/tube_soap.svg" alt="">
-                                        <img src="svg/brush.svg" alt="">
-                                        <img src="svg/tube_hexagon.svg" alt="">
-                                        <img src="svg/tube_cream.svg" alt="">
-                                        <img src="svg/tube_waterdrop.svg" alt="">
-                                        <img src="svg/tube_soap.svg" alt="">
-                                        <img src="svg/brush.svg" alt="">
-                                        <img src="svg/tube_hexagon.svg" alt="">
-                                    </div>
-                                    <div class="CardContactsLarge__Buttons">
-                                        <button>Панель администратора</button>
-                                        <button>Мобильное приложение</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="style__NewSection DoubleCardSection">
-                            <div class="style__SectionFrame">
-                                <div class="style__CardContacts CardContactsSmall">
-                                    <div class="CardContactsSmall__Frame">
-                                        <div class="CardContactsSmall__Text">
-                                            <h2>CRM система</h2>
-                                            <p>CRM система для управления работой каршеринговой компании</p>
-                                        </div>
-                                        <div class="CardContactsSmallLeft__Image">
-                                            <img src="svg/car.svg" alt="">
-                                        </div>
-                                        <div class="CardContactsSmall__Button">
-                                            <button>Покажите</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="style__CardContacts CardContactsSmall">
-                                    <div class="CardContactsSmall__Frame">
-                                        <div class="CardContactsSmall__Text">
-                                            <h2>Электронный документооборот</h2>
-                                            <p>Решение для автоматизации процессов документовоборудования для строительной отрасли</p>
-                                        </div>
-                                        <div class="CardContactsSmallRight__Image">
-                                            <img src="svg/doc_logo.svg" alt="document">
-                                        </div>
-                                        <div class="CardContactsSmall__Button">
-                                            <button>Покажите</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section class="style__NewSection">
-                            <div class="style__FormCard">
-                                <div class="FormCard__Frame">
-                                    <div class="FormCard__Text">
-                                        <h2>Заинтересовала наша компания?</h2>
-                                        <div class="FormCard__Text__MiddlePart">
-                                            <p>Тогда мы будем искренне рады, если вы решите написать нам!</p>
-                                            <p>Обсудим тонкости вашего проекта и поможем советом!</p>
-                                        </div>
-                                        <p>Пиши на почту: <a href="mailto:hello@fortech.dev">hello@fortech.dev</a></p>
-                                    </div>
-                                    <div class="FormCard__FormFrame">
-                                        <form class="FormCard__Form" action="" method="post" id="form">
-                                            <div class="Form__FormInput">
-                                                <input name="name" type="text" placeholder="Имя">
-                                                <p class="Form__ErrorMessages"></p>
-                                                <input name="email" type="email" placeholder="Email">
-                                                <p class="Form__ErrorMessages"></p>
-                                                <input name="phone" type="tel" placeholder="Номер телефона" value="+7">
-                                                <p class="Form__ErrorMessages"></p>
-                                                <input id="file" type="file" accept=".pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt" placeholder="Краткое описание">
-                                                <p class="Form__Extensions">Please upload a file with the following extension: .pdf, .docx, .odt, .ods, .ppt/x, .xls/x, .rtf, .txt</p>
-                                            </div>
-                                            <button type="submit">Отправить</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-            </main>
-            <footer class="style__Footer">
-                <div class="Footer__Contacts">
-                    <div class="Contacts__Links">
-                        <ul>
-                            <li><a href="#">Преимущества</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Портфолио</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="Contacts__Messangers">
-                        <div class="telegram_logo"><a href="https://t.me/fortech_hr" target="_blank"><img id="tg_logo" src="svg/tg_logo.svg" alt="Telegram"></a></div>
-                        <div class="instagram_logo"><a href="#" target="_blank"><img id="inst_logo" src="svg/insta_logo.svg" alt="Instagram"></a></div>
-                        <div class="vk_logo"><a href="https://vk.com/fortech_dev" target="_blank"><img id="vk_logo" src="svg/vk_logo.svg" alt="VK"></a></div>
-                    </div>
-                    <div class="Contacts__Copyright">
-                        <p>© 2022 Fortech. <a href="#">Privacy policy</a></p>
-                    </div>
+                <div class="Contacts__Copyright">
+                    <p>© 2022 Fortech. <a href="#">Privacy policy</a></p>
                 </div>
-            </footer>
+            </div>
+        </footer>
     </body>
     <script type="text/javascript" src="js/script.js"></script>
 </html>
