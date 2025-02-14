@@ -43,6 +43,16 @@ span, div, button, p, label {
     list-style: none;
     gap: 24px;
 }
+.LanguageSelect__Active {
+    text-decoration: underline #4B2EC8;
+    color: #4B2EC8;
+    font-weight: 600;
+}
+.style__HeaderLanguageSelectElements a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: normal;
+}
 .style__HeaderMenuElements a:hover {
     color: #4B2EC8;
     text-decoration: underline;
@@ -60,16 +70,6 @@ span, div, button, p, label {
 .style__HeaderMenuElements a {
     text-decoration: none;
     color: white;
-}
-.LanguageSelect__Active {
-    text-decoration: underline #4B2EC8;
-    color: #4B2EC8;
-    font-weight: 600;
-}
-.style__HeaderLanguageSelectElements a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: normal;
 }
 button {
     background-color: #4B2EC8;
